@@ -1,0 +1,9 @@
+#!/usr/bin/env node
+// npx bucket-mcp — thin launcher that execs the Python stdio server.
+// Keeps the "zero-install for node users" path while the real server stays
+// stdlib-only Python.
+const { spawn } = require("child_process");
+const path = require("path");
+const script = path.resolve(__dirname, "..", "bucket-mcp.py");
+const child = spawn("python3", [script], { stdio: "inherit" });
+child.on("exit", (code) => process.exit(code ?? 0));

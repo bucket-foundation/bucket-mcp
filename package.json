@@ -1,0 +1,28 @@
+{
+  "name": "bucket-mcp",
+  "version": "0.1.0",
+  "description": "Stdio MCP server for the Bucket Foundation research rail (bucket.foundation). Three tools: bucket_research, bucket_cite, bucket_canon_list.",
+  "bin": {
+    "bucket-mcp": "./bin/bucket-mcp"
+  },
+  "files": [
+    "bucket-mcp.py",
+    "bin/bucket-mcp",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "start": "python3 bucket-mcp.py"
+  },
+  "keywords": ["mcp", "bucket-foundation", "feed402", "x402", "research", "claude"],
+  "author": "Bucket Foundation",
+  "license": "MIT",
+  "homepage": "https://www.bucket.foundation",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bucket-foundation/bucket-mcp.git"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
