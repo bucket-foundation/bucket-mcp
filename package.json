@@ -1,6 +1,9 @@
 {
-  "name": "bucket-mcp",
+  "name": "@bucket-foundation/mcp",
   "version": "0.1.0",
+  "publishConfig": {
+    "access": "public"
+  },
   "description": "Stdio MCP server for the Bucket Foundation research rail (bucket.foundation). Three tools: bucket_research, bucket_cite, bucket_canon_list.",
   "bin": {
     "bucket-mcp": "./bin/bucket-mcp"
