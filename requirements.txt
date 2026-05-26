@@ -1,0 +1,10 @@
+# bucket-mcp runtime deps.
+#
+# The three Bucket tools (bucket_research, bucket_cite, bucket_canon_list) are
+# zero-dependency (stdlib only).
+#
+# The two DerbyFish tools need psycopg2 to read the analytics warehouse
+# (read-only). It is imported lazily, so the server still starts and the Bucket
+# tools still work without it installed. The vision-worker calls use stdlib
+# urllib (no httpx required).
+psycopg2-binary>=2.9
