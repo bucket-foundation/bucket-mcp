@@ -1,5 +1,7 @@
 # bucket-mcp
 
+> **Hosted endpoint.** The same tools, plus the hypothesis engine's `hypothesize`, run at `https://www.bucket.foundation/api/mcp` (Streamable HTTP, no auth, read-only). Claude.ai: Settings, Connectors, Add custom connector, that URL. ChatGPT: Settings, Apps & Connectors, Developer mode, Create, that URL, authentication None. Claude Code: `claude mcp add --transport http bucket https://www.bucket.foundation/api/mcp`. The canonical server source is `mcp-server/bucket-mcp.py` and `src/lib/mcp/server.ts` in [bucket-foundation/bucket-foundation](https://github.com/bucket-foundation/bucket-foundation); this repo stays as the stdio install path for offline use.
+
 Zero-dependency stdio MCP server for the **Bucket Foundation** research rail.
 Plug into Claude Desktop or Claude Code and get three tools:
 
